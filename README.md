@@ -12,3 +12,4 @@
 - [x] 题目3：[二维数组中查找](https://github.com/Skyexu/point-to-offer/blob/master/src/Question03.java)
 - [x] 题目4：[替换空格](https://github.com/Skyexu/point-to-offer/blob/master/src/Question04.java)
 - [x] 题目5：[从尾到头打印链表](https://github.com/Skyexu/point-to-offer/blob/master/src/Question05.java)
+- [x] 题目6：[重建二叉树](https://github.com/Skyexu/point-to-offer/blob/master/src/Question06.java)

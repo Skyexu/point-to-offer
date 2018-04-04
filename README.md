@@ -24,3 +24,5 @@
 - [x] 题目11：[二进制中的1的个数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question11.java)
 - [x] 题目14：[调整数组顺序使奇数位于偶数前面](https://github.com/Skyexu/point-to-offer/blob/master/src/Question14.java)
 - [x] 题目15：[链表中倒数第k个结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question15.java)
+- [x] 题目16：[反转链表](https://github.com/Skyexu/point-to-offer/blob/master/src/Question16.java)
+- [x] 题目17：[合并两个排序的链表](https://github.com/Skyexu/point-to-offer/blob/master/src/Question17.java)

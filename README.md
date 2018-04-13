@@ -26,3 +26,7 @@
 - [x] 题目15：[链表中倒数第k个结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question15.java)
 - [x] 题目16：[反转链表](https://github.com/Skyexu/point-to-offer/blob/master/src/Question16.java)
 - [x] 题目17：[合并两个排序的链表](https://github.com/Skyexu/point-to-offer/blob/master/src/Question17.java)
+- [x] 题目18：[树的子结构](https://github.com/Skyexu/point-to-offer/blob/master/src/Question18.java)
+- [x] 题目19：[二叉树的镜像](https://github.com/Skyexu/point-to-offer/blob/master/src/Question19.java)
+- [x] 题目20：[顺时针打印矩阵](https://github.com/Skyexu/point-to-offer/blob/master/src/Question20.java)
+

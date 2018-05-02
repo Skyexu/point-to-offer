@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * @Author: Skye
  * @Date: 10:56 2018/3/28
- * @Description: 打印1到最大的n 位数
+ * @Description: 打印1 到最大的n 位数
  *
  */
 public class Question12 {

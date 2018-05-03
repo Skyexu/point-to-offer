@@ -30,5 +30,7 @@
 - [x] 题目19：[二叉树的镜像](https://github.com/Skyexu/point-to-offer/blob/master/src/Question19.java)
 - [x] 题目20：[顺时针打印矩阵](https://github.com/Skyexu/point-to-offer/blob/master/src/Question20.java)
 - [x] 题目21：[包含min函数的栈](https://github.com/Skyexu/point-to-offer/blob/master/src/Question21.java)
-
+- [x] 题目22：[栈的压入、弹出序列](https://github.com/Skyexu/point-to-offer/blob/master/src/Question22.java)
+- [x] 题目23：[从上往下打印二叉树](https://github.com/Skyexu/point-to-offer/blob/master/src/Question23.java)
+- [x] 题目24：[二叉搜索树的后序遍历序列](https://github.com/Skyexu/point-to-offer/blob/master/src/Question24.java)
 

@@ -33,4 +33,5 @@
 - [x] 题目22：[栈的压入、弹出序列](https://github.com/Skyexu/point-to-offer/blob/master/src/Question22.java)
 - [x] 题目23：[从上往下打印二叉树](https://github.com/Skyexu/point-to-offer/blob/master/src/Question23.java)
 - [x] 题目24：[二叉搜索树的后序遍历序列](https://github.com/Skyexu/point-to-offer/blob/master/src/Question24.java)
-
+- [x] 题目25：[二叉树中和为某一值的路径](https://github.com/Skyexu/point-to-offer/blob/master/src/Question25.java)
+- [x] 题目26：[复杂链表的复制](https://github.com/Skyexu/point-to-offer/blob/master/src/Question26.java)

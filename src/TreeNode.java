@@ -4,8 +4,8 @@
  * @Description: 树节点
  */
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+    int val = 0;
+    TreeNode left = null;
+    TreeNode right = null;
     TreeNode(int x) { val = x; }
 }

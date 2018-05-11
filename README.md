@@ -35,3 +35,5 @@
 - [x] 题目24：[二叉搜索树的后序遍历序列](https://github.com/Skyexu/point-to-offer/blob/master/src/Question24.java)
 - [x] 题目25：[二叉树中和为某一值的路径](https://github.com/Skyexu/point-to-offer/blob/master/src/Question25.java)
 - [x] 题目26：[复杂链表的复制](https://github.com/Skyexu/point-to-offer/blob/master/src/Question26.java)
+- [x] 题目27：[二叉搜索树与双向链表](https://github.com/Skyexu/point-to-offer/blob/master/src/Question27.java)
+- [x] 题目28：[字符串的排列](https://github.com/Skyexu/point-to-offer/blob/master/src/Question28.java)

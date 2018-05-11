@@ -31,6 +31,7 @@ public class Code_00_BubbleSort {
     public static void comparator(int[] arr){
         Arrays.sort(arr);
     }
+
     // for test, 产生一个随机数组
     public static int[] generateRandomArray(int maxSize,int maxValue){
         // random array size
@@ -80,6 +81,7 @@ public class Code_00_BubbleSort {
         System.out.println();
     }
     public static void main(String[] args) {
+        // 与保证正确的答案对比多次，验证结果    
         int testTime = 50000;
         int maxSize = 100;
         int maxValue = 100;

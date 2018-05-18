@@ -81,7 +81,7 @@ public class Code_00_BubbleSort {
         System.out.println();
     }
     public static void main(String[] args) {
-        // 与保证正确的答案对比多次，验证结果    
+        // 与保证正确的答案对比多次，验证结果
         int testTime = 50000;
         int maxSize = 100;
         int maxValue = 100;

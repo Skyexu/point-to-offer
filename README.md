@@ -37,3 +37,7 @@
 - [x] 题目26：[复杂链表的复制](https://github.com/Skyexu/point-to-offer/blob/master/src/Question26.java)
 - [x] 题目27：[二叉搜索树与双向链表](https://github.com/Skyexu/point-to-offer/blob/master/src/Question27.java)
 - [x] 题目28：[字符串的排列](https://github.com/Skyexu/point-to-offer/blob/master/src/Question28.java)
+- [x] 题目29：[数组中出现次数超过一半的数字](https://github.com/Skyexu/point-to-offer/blob/master/src/Question29.java) *(partiton)*
+- [x] 题目30：[最小的K个数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question30.java) *(堆)*
+- [x] 题目31：[连续子数组的最大和](https://github.com/Skyexu/point-to-offer/blob/master/src/Question31.java) *(动态规划)*
+- [x] 题目32：[整数中1出现的次数（从1到n整数中1出现的次数）](https://github.com/Skyexu/point-to-offer/blob/master/src/Question32.java) *(规律)*

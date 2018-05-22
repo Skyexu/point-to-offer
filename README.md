@@ -41,3 +41,9 @@
 - [x] 题目30：[最小的K个数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question30.java) *(堆)*
 - [x] 题目31：[连续子数组的最大和](https://github.com/Skyexu/point-to-offer/blob/master/src/Question31.java) *(动态规划)*
 - [x] 题目32：[整数中1出现的次数（从1到n整数中1出现的次数）](https://github.com/Skyexu/point-to-offer/blob/master/src/Question32.java) *(规律)*
+- [x] 题目33：[把数组排成最小的数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question33.java) *(自定义规则)*
+- [x] 题目34：[丑数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question34.java) 
+- [x] 题目35：[第一个只出现一次的字符](https://github.com/Skyexu/point-to-offer/blob/master/src/Question35.java) *(hash)*
+- [x] 题目36：[数组中的逆序对](https://github.com/Skyexu/point-to-offer/blob/master/src/Question36.java) *(归并排序的思想)*
+- [x] 题目37：[两个链表的第一个公共结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question37.java) 
+- [x] 题目38：[数字在排序数组中出现的次数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question38.java) *(二分法的思想)*

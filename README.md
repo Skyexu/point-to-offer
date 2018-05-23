@@ -47,3 +47,5 @@
 - [x] 题目36：[数组中的逆序对](https://github.com/Skyexu/point-to-offer/blob/master/src/Question36.java) *(归并排序的思想)*
 - [x] 题目37：[两个链表的第一个公共结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question37.java) 
 - [x] 题目38：[数字在排序数组中出现的次数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question38.java) *(二分法的思想)*
+- [x] 题目39：[二叉树的深度](https://github.com/Skyexu/point-to-offer/blob/master/src/Question39.java) *(树遍历)*
+- [x] 题目40：[平衡二叉树](https://github.com/Skyexu/point-to-offer/blob/master/src/Question40.java) *(树遍历)*

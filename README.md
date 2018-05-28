@@ -51,3 +51,5 @@
 - [x] 题目40：[平衡二叉树](https://github.com/Skyexu/point-to-offer/blob/master/src/Question40.java) *(树遍历)*
 - [x] 题目41：[数组中只出现一次的数字](https://github.com/Skyexu/point-to-offer/blob/master/src/Question41.java) *(异或性质)*
 - [x] 题目42：[和为S的连续正数序列](https://github.com/Skyexu/point-to-offer/blob/master/src/Question42.java)
+- [x] 题目43：[和为S的两个数字](https://github.com/Skyexu/point-to-offer/blob/master/src/Question43.java)
+- [x] 题目44：[左旋转字符串](https://github.com/Skyexu/point-to-offer/blob/master/src/Question44.java)

@@ -49,3 +49,5 @@
 - [x] 题目38：[数字在排序数组中出现的次数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question38.java) *(二分法的思想)*
 - [x] 题目39：[二叉树的深度](https://github.com/Skyexu/point-to-offer/blob/master/src/Question39.java) *(树遍历)*
 - [x] 题目40：[平衡二叉树](https://github.com/Skyexu/point-to-offer/blob/master/src/Question40.java) *(树遍历)*
+- [x] 题目41：[数组中只出现一次的数字](https://github.com/Skyexu/point-to-offer/blob/master/src/Question41.java) *(异或性质)*
+- [x] 题目42：[和为S的连续正数序列](https://github.com/Skyexu/point-to-offer/blob/master/src/Question42.java)

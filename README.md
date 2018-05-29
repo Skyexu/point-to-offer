@@ -53,3 +53,6 @@
 - [x] 题目42：[和为S的连续正数序列](https://github.com/Skyexu/point-to-offer/blob/master/src/Question42.java)
 - [x] 题目43：[和为S的两个数字](https://github.com/Skyexu/point-to-offer/blob/master/src/Question43.java)
 - [x] 题目44：[左旋转字符串](https://github.com/Skyexu/point-to-offer/blob/master/src/Question44.java)
+- [x] 题目45：[翻转单词顺序列](https://github.com/Skyexu/point-to-offer/blob/master/src/Question45.java)
+- [x] 题目46：[扑克牌顺子](https://github.com/Skyexu/point-to-offer/blob/master/src/Question46.java)
+- [x] 题目47：[圆圈中最后剩下的数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question47.java)

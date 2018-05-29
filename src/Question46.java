@@ -14,25 +14,34 @@ import java.util.Set;
  */
 public class Question46 {
     public boolean isContinuous(int [] numbers) {
-        if (numbers == null || numbers.length < 2){
+        if (numbers == null || numbers.length < 5){
             return false;
         }
-        int len = numbers.length;
-        Set<Integer> selectNum = new HashSet<>();
-        int[] seNums = new int[5];
-        while (selectNum.size() < 5){
-            int random = (int)Math.random()*len;
-            selectNum.add(random);
-        }
-        int index =0;
-        for (Integer num:
-             selectNum) {
-            seNums[index++] = numbers[num];
-        }
-        Arrays.sort(seNums);
+
+        Arrays.sort(numbers);
 
         int numZero = 0;
         int gap = 0;
-        
+        for (int i = 0; i < numbers.length - 1; i++) {
+            if (numbers[i] == 0){
+                numZero++;
+            }else {
+                if (numbers[i+1] - numbers[i] == 0)
+                    return false;
+                gap += numbers[i+1] - numbers[i] - 1 ;
+
+            }
+
+        }
+        if (gap <= numZero){
+            return true;
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        Question46 question46 = new Question46();
+        int[] numbers = new int[]{1,2,3,4,5};
+        System.out.println(question46.isContinuous(numbers));
     }
 }

@@ -56,3 +56,8 @@
 - [x] 题目45：[翻转单词顺序列](https://github.com/Skyexu/point-to-offer/blob/master/src/Question45.java)
 - [x] 题目46：[扑克牌顺子](https://github.com/Skyexu/point-to-offer/blob/master/src/Question46.java)
 - [x] 题目47：[圆圈中最后剩下的数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question47.java)
+- [x] 题目48：[求1+2+3+...+n](https://github.com/Skyexu/point-to-offer/blob/master/src/Question48.java)
+- [x] 题目49：[不用加减乘除做加法](https://github.com/Skyexu/point-to-offer/blob/master/src/Question49.java)*(位运算)*
+- [x] 题目50：[把字符串转换成整数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question50.java)
+- [x] 题目51：[数组中重复的数字](https://github.com/Skyexu/point-to-offer/blob/master/src/Question51.java)
+- [x] 题目52：[构建乘积数组](https://github.com/Skyexu/point-to-offer/blob/master/src/Question52.java)

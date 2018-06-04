@@ -61,4 +61,5 @@
 - [x] 题目50：[把字符串转换成整数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question50.java)
 - [x] 题目51：[数组中重复的数字](https://github.com/Skyexu/point-to-offer/blob/master/src/Question51.java)
 - [x] 题目52：[构建乘积数组](https://github.com/Skyexu/point-to-offer/blob/master/src/Question52.java)
-- [x] 题目53：[正则表达式匹配](https://github.com/Skyexu/point-to-offer/blob/master/src/Question52.java) *(逐个情况分析)*
+- [x] 题目53：[正则表达式匹配](https://github.com/Skyexu/point-to-offer/blob/master/src/Question53.java) *(逐个情况分析)*
+- [x] 题目54：[正则表达式匹配](https://github.com/Skyexu/point-to-offer/blob/master/src/Question54.java) *(逐个情况分析)*

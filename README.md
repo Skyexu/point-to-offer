@@ -63,3 +63,6 @@
 - [x] 题目52：[构建乘积数组](https://github.com/Skyexu/point-to-offer/blob/master/src/Question52.java)
 - [x] 题目53：[正则表达式匹配](https://github.com/Skyexu/point-to-offer/blob/master/src/Question53.java) *(逐个情况分析)*
 - [x] 题目54：[表示数值的字符串](https://github.com/Skyexu/point-to-offer/blob/master/src/Question54.java) *(逐个情况分析)*
+- [x] 题目55：[字符流中第一个不重复的字符](https://github.com/Skyexu/point-to-offer/blob/master/src/Question55.java) *(hash)*
+- [x] 题目56：[链表中环的入口结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question56.java)
+- [x] 题目57：[删除链表中重复的结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question57.java)

@@ -66,3 +66,5 @@
 - [x] 题目55：[字符流中第一个不重复的字符](https://github.com/Skyexu/point-to-offer/blob/master/src/Question55.java) *(hash)*
 - [x] 题目56：[链表中环的入口结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question56.java)
 - [x] 题目57：[删除链表中重复的结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question57.java)
+- [x] 题目58：[二叉树的下一个结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question58.java)
+- [x] 题目59：[对称二叉树](https://github.com/Skyexu/point-to-offer/blob/master/src/Question59.java)*(树遍历的运用)*

@@ -68,3 +68,7 @@
 - [x] 题目57：[删除链表中重复的结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question57.java)
 - [x] 题目58：[二叉树的下一个结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question58.java)
 - [x] 题目59：[对称二叉树](https://github.com/Skyexu/point-to-offer/blob/master/src/Question59.java)*(树遍历的运用)*
+- [x] 题目60：[按之字形顺序打印二叉树](https://github.com/Skyexu/point-to-offer/blob/master/src/Question60.java)*(树遍历的运用)*
+- [x] 题目61：[把二叉树打印成多行](https://github.com/Skyexu/point-to-offer/blob/master/src/Question61.java)*(树层序遍历)*
+- [x] 题目62：[序列化二叉树](https://github.com/Skyexu/point-to-offer/blob/master/src/Question62.java)*(树前序遍历)*
+- [x] 题目63：[二叉搜索树的第k个结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question63.java)*(二叉搜索树，中序遍历)*

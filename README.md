@@ -72,3 +72,4 @@
 - [x] 题目61：[把二叉树打印成多行](https://github.com/Skyexu/point-to-offer/blob/master/src/Question61.java)*(树层序遍历)*
 - [x] 题目62：[序列化二叉树](https://github.com/Skyexu/point-to-offer/blob/master/src/Question62.java)*(树前序遍历)*
 - [x] 题目63：[二叉搜索树的第k个结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question63.java)*(二叉搜索树，中序遍历)*
+- [x] 题目64：[数据流中的中位数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question64.java)*(堆的应用，时间复杂度)*

@@ -74,3 +74,5 @@
 - [x] 题目63：[二叉搜索树的第k个结点](https://github.com/Skyexu/point-to-offer/blob/master/src/Question63.java)*(二叉搜索树，中序遍历)*
 - [x] 题目64：[数据流中的中位数](https://github.com/Skyexu/point-to-offer/blob/master/src/Question64.java)*(堆的应用，时间复杂度)*
 - [x] 题目65：[滑动窗口的最大值](https://github.com/Skyexu/point-to-offer/blob/master/src/Question65.java)*(双向链表)*
+- [x] 题目66：[矩阵中的路径](https://github.com/Skyexu/point-to-offer/blob/master/src/Question66.java)*(回溯法)*
+- [x] 题目67：[机器人的运动范围](https://github.com/Skyexu/point-to-offer/blob/master/src/Question67.java)*(回溯法)*

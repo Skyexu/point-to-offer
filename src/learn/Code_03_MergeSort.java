@@ -4,20 +4,38 @@ import java.util.Arrays;
 
 /**
  * @Author: Skye
- * @Date: 21:09 2018/6/19
- * @Description: 选择排序
+ * @Date: 14:55 2018/6/21
+ * @Description: 归并排序
  */
-public class Code_02_SelectionSort {
-    public static void selectionSort(int[] arr){
+public class Code_03_MergeSort {
+    public static void mergeSort(int[] arr){
         if (arr == null || arr.length < 2)
             return;
 
-        for (int i = 0; i < arr.length - 1; i++) {
-            int minIndex = i;
-            for (int j = i + 1; j < arr.length; j++) {
-                minIndex = arr[j] < arr[minIndex] ? j : minIndex;
-            }
-            swap(arr, i, minIndex);
+        mergeSort(arr,0,arr.length-1);
+
+    }
+    public static void mergeSort(int[] arr,int start,int end){
+        if (start >= end)
+            return;
+        int[] temp = new int[end - start + 1];
+        int mid = (end+start)/2;
+        mergeSort(arr,start,mid);
+        mergeSort(arr,mid+1,end);
+        int p1 = start;
+        int p2 = mid + 1;
+        int i = 0;
+        while (p1 <= mid && p2 <= end){
+            temp[i++] = arr[p1] < arr[p2]? arr[p1++]:arr[p2++];
+        }
+        while (p1 <= mid){
+            temp[i++] = arr[p1++];
+        }
+        while (p2 <= end){
+            temp[i++] = arr[p2++];
+        }
+        for (int j = 0; j < temp.length; j++) {
+            arr[start+j] = temp[j];
         }
     }
     public static void swap(int[] arr,int i,int j){
@@ -88,7 +106,7 @@ public class Code_02_SelectionSort {
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = generateRandomArray(maxSize,maxValue);
             int[] arr2 = copyArray(arr1);
-            selectionSort(arr1);
+            mergeSort(arr1);
             comparator(arr2);
             if (!isEqual(arr1,arr2)){
                 succeed = false;
@@ -99,7 +117,7 @@ public class Code_02_SelectionSort {
 
         int[] arr = generateRandomArray(maxSize, maxValue);
         printArray(arr);
-        selectionSort(arr);
+        mergeSort(arr);
         printArray(arr);
 
     }

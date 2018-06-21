@@ -17,6 +17,7 @@
 | 空间复杂度     | 总共![O(n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/34109fe397fdcff370079185bfdb65826cb5565a)，需要辅助空间![O(1)](https://wikimedia.org/api/rest_v1/media/math/render/svg/e66384bc40452c5452f33563fe0e27e803b0cc21) |
 
 ### 插入排序
+
 一般来说，插入排序都采用in-place在数组上实现（即只需用到O(1)的额外空间的排序）。具体算法描述如下：
 1. 从第一个元素开始，该元素可以认为已经被排序
 2. 取出下一个元素，在已经排序的元素序列中从后向前扫描
@@ -39,6 +40,24 @@
 | 最优时间复杂度 | *О(n²)*                        |
 | 平均时间复杂度 | *О(n²)*                        |
 | 空间复杂度     | *О(n)* total, *O(1)* auxiliary |
+
+### 归并排序
+
+归并排序（MERGE-SORT）是建立在归并操作上的一种有效的排序算法,该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。将已有序的子序列合并，得到完全有序的序列；即先使每个子序列有序，再使子序列段间有序。若将两个有序表合并成一个有序表，称为二路归并。
+
+1. 申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列
+2. 设定两个指针，最初位置分别为两个已经排序序列的起始位置
+3. 比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置
+4. 重复步骤3直到某一指针到达序列尾
+5. 将另一序列剩下的所有元素直接复制到合并序列尾
+
+| 最坏时间复杂度 | ![\Theta (n\log n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/1b8781cea4259c3bd43204e02d08b9b9ce8fe0ff) |
+| -------------- | ------------------------------------------------------------ |
+| 最优时间复杂度 | ![\Theta (n\log n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/1b8781cea4259c3bd43204e02d08b9b9ce8fe0ff) |
+| 平均时间复杂度 | ![\Theta (n\log n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/1b8781cea4259c3bd43204e02d08b9b9ce8fe0ff) |
+| 空间复杂度     | ![\Theta(n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/a6351206e27071559aa4472579095994f650d76b) |
+
+算法应用：小和问题、逆序对问题
 
 ### 排序的稳定性
 

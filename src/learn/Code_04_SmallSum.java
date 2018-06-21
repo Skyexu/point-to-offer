@@ -4,21 +4,42 @@ import java.util.Arrays;
 
 /**
  * @Author: Skye
- * @Date: 21:09 2018/6/19
- * @Description: 选择排序
+ * @Date: 15:38 2018/6/21
+ * @Description: 小和问题，归并排序应用
+ * 在一个数组中，每一个数左边比当前数小的数累加起来，叫做这个数组的小和。求一个数组的小和
  */
-public class Code_02_SelectionSort {
-    public static void selectionSort(int[] arr){
-        if (arr == null || arr.length < 2)
-            return;
+public class Code_04_SmallSum {
 
-        for (int i = 0; i < arr.length - 1; i++) {
-            int minIndex = i;
-            for (int j = i + 1; j < arr.length; j++) {
-                minIndex = arr[j] < arr[minIndex] ? j : minIndex;
-            }
-            swap(arr, i, minIndex);
+    public static int small_sum(int[] arr){
+        if (arr == null || arr.length < 2)
+            return 0;
+        return mergeSort(arr,0,arr.length-1);
+    }
+    public static int mergeSort(int[] arr,int start,int end){
+        if (start >= end)
+            return 0;
+        int[] temp = new int[end - start + 1];
+        int mid = (end+start)/2;
+        int sum0 = mergeSort(arr,start,mid);
+        int sum1 = mergeSort(arr,mid+1,end);
+        int p1 = start;
+        int p2 = mid + 1;
+        int i = 0;
+        int sum2 = 0;
+        while (p1 <= mid && p2 <= end){
+            sum2 += arr[p1] < arr[p2]? (end - p2 + 1)* arr[p1] : 0;
+            temp[i++] = arr[p1] < arr[p2]? arr[p1++]:arr[p2++];
         }
+        while (p1 <= mid){
+            temp[i++] = arr[p1++];
+        }
+        while (p2 <= end){
+            temp[i++] = arr[p2++];
+        }
+        for (int j = 0; j < temp.length; j++) {
+            arr[start+j] = temp[j];
+        }
+        return sum0 + sum1 + sum2;
     }
     public static void swap(int[] arr,int i,int j){
         int temp = arr[i];
@@ -27,8 +48,17 @@ public class Code_02_SelectionSort {
     }
 
     // for test, java 默认实现，一个保证对的方法
-    public static void comparator(int[] arr){
-        Arrays.sort(arr);
+    public static int comparator(int[] arr){
+        if (arr == null || arr.length < 2) {
+            return 0;
+        }
+        int res = 0;
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = 0; j < i; j++) {
+                res += arr[j] < arr[i] ? arr[j] : 0;
+            }
+        }
+        return res;
     }
 
     // for test, 产生一个随机数组
@@ -88,19 +118,16 @@ public class Code_02_SelectionSort {
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = generateRandomArray(maxSize,maxValue);
             int[] arr2 = copyArray(arr1);
-            selectionSort(arr1);
-            comparator(arr2);
-            if (!isEqual(arr1,arr2)){
+            int s1 = small_sum(arr1);
+            int s2 = comparator(arr2);
+            if (s2!=s1){
                 succeed = false;
                 break;
             }
         }
         System.out.println(succeed ? "Nice!":"Fucking!");
 
-        int[] arr = generateRandomArray(maxSize, maxValue);
-        printArray(arr);
-        selectionSort(arr);
-        printArray(arr);
+
 
     }
 }

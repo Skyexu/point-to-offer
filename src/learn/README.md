@@ -57,7 +57,22 @@
 | 平均时间复杂度 | ![\Theta (n\log n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/1b8781cea4259c3bd43204e02d08b9b9ce8fe0ff) |
 | 空间复杂度     | ![\Theta(n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/a6351206e27071559aa4472579095994f650d76b) |
 
-算法应用：小和问题、逆序对问题
+算法应用：[小和问题](/Code_04_SmallSum.java)、逆序对问题
+
+### 快速排序
+
+步驟為：
+
+1. 從數列中挑出一個元素，稱為"基準"（pivot），
+2. 重新排序數列，所有比基準值小的元素擺放在基準前面，所有比基準值大的元素擺在基準後面（相同的數可以到任何一邊）。在這個分割結束之後，該基準就處於數列的中間位置。這個稱為**分割（partition）**操作。（patition 可以把与基准相同的数放在中间来优化快排）
+3. 递归地（recursively）把小於基准值元素的子數列和大於基准值元素的子數列排序。
+
+递归到最底部时，數列的大小是零或一，也就是已經排序好了。這個演算法一定會結束，因為在每次的迭代（iteration）中，它至少會把一個元素擺到它最後的位置去。
+
+| 最坏时间复杂度 | ![\Theta (n^{2})](https://wikimedia.org/api/rest_v1/media/math/render/svg/215877752c4f392a7276328d4d37709bf7c3f55d) |
+| -------------- | ------------------------------------------------------------ |
+| 最优时间复杂度 | ![\Theta (n\log n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/1b8781cea4259c3bd43204e02d08b9b9ce8fe0ff) |
+| 平均时间复杂度 | ![\Theta (n\log n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/1b8781cea4259c3bd43204e02d08b9b9ce8fe0ff) |
 
 ### 排序的稳定性
 

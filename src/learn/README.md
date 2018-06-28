@@ -74,6 +74,41 @@
 | 最优时间复杂度 | ![\Theta (n\log n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/1b8781cea4259c3bd43204e02d08b9b9ce8fe0ff) |
 | 平均时间复杂度 | ![\Theta (n\log n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/1b8781cea4259c3bd43204e02d08b9b9ce8fe0ff) |
 
+## 堆排序
+
+堆排序的基本思想是：将待排序序列构造成一个大顶堆，此时，整个序列的最大值就是堆顶的根节点。将其与末尾元素进行交换，此时末尾就为最大值。然后将剩余n-1个元素重新构造成一个堆，这样会得到n个元素的次小值。如此反复执行，便能得到一个有序序列了。
+
+> 图解参考https://www.cnblogs.com/jingmoxukong/p/4303826.html
+
+小顶堆R[i]：
+
+(1) 它的**左孩子结点**是：**R[2\*i+1]**;
+
+(2) 它的**右孩子结点**是：**R[2\*i+2]**;
+
+(3) 它的**父结点**是：**R[(i-1)/2]**;
+
+(4) R[i] <= R[2*i+1] 且 R[i] <= R[2i+2]。
+
+1. 堆结构的heapInsert与heapify
+2. 堆结构的增大和减少
+3. 如果只是建立堆的过程，时间复杂度为O(N)
+4. **优先级队列结构，就是堆结构**
+
+时间复杂度:
+
+空间复杂度：堆排序数据交换时需要一个辅助空间，故空间复杂度是O（1）
+
+在构建堆(初始化大顶堆)的过程中，完全二叉树从最下层最右边的非终端结点开始构建，将它与其孩子进行比较和必要的互换，对于每个非终端结点来说，其实最多进行两次比较和一次互换操作，因此整个**构建堆**的时间复杂度为: O(n)。大概需进行n/2 * 2 = n次比较和n/2次交换。
+
+在正式排序时，n个结点的完全二叉树的深度为⌊log2n⌋+1，并且有n个数据则需要取n-1次调整成大顶堆的操作，每次调整成大顶堆的时间复杂度为O(log2n)。因此，重建堆的时间复杂度可近似看做: O(nlogn)。
+
+| 最坏时间复杂度 | ![O(n\log n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/9d2320768fb54880ca4356e61f60eb02a3f9d9f1) |
+| -------------- | ------------------------------------------------------------ |
+| 最优时间复杂度 | ![O(n\log n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/9d2320768fb54880ca4356e61f60eb02a3f9d9f1)[[1\]](https://www.wikiwand.com/zh/%E5%A0%86%E6%8E%92%E5%BA%8F#citenote1) |
+| 平均时间复杂度 | ![\Theta (n\log n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/1b8781cea4259c3bd43204e02d08b9b9ce8fe0ff) |
+| 空间复杂度     | ![O(n)](https://wikimedia.org/api/rest_v1/media/math/render/svg/34109fe397fdcff370079185bfdb65826cb5565a) total, ![O(1)](https://wikimedia.org/api/rest_v1/media/math/render/svg/e66384bc40452c5452f33563fe0e27e803b0cc21) auxiliary |
+
 ### 排序的稳定性
 
 首先，排序算法的稳定性大家应该都知道，通俗地讲就是能保证排序前2个相等的数其在序列的前后位置顺序和排序后它们两个的前后位置顺序相同。在简单形式化一下，如果Ai = Aj，Ai原来在位置前，排序后Ai还是要在Aj位置前。其次，说一下稳定性的好处。排序算法如果是稳定的，那么从一个键上排序，然后再从另一个键上排序，第一个键排序的结果可以为第二个键排序所用。基数排序就是这样，先按低位排序，逐次按高位排序，低位相同的元素其顺序再高位也相同时是不会改变的。另外，如果排序算法稳定，对基于比较的排序算法而言，元素交换的次数可能会少一些（个人感觉，没有证实）。

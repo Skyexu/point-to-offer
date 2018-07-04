@@ -19,42 +19,42 @@ import java.util.Scanner;
 题目保证两颗星星不会存在于同一个位置。
 输出描述:
 输出一共包含m行，每行表示与之对应的每个问题的答案。
+
+解法：   10000*10000规模的星星矩阵，每次查询都遍历所有的话肯定会超时。
+        可以先计算出每个个点左上方一共有多少颗星星，记为 num 矩阵。
+        查询某个矩形中的星星数，(x1, y1)(x2，y2)  即为 num[x2][y2] - num[x2][y1-1] - num[x1-1][y2] + num[x1-1][y1-1]
+        这样每次查询为O(1)
+        计算出每个个点左上方一共有多少颗星星，可以累加
+https://www.nowcoder.com/discuss/84527
  */
 public class T1 {
     public static void main(String[] args) {
-        boolean[][] matrix = new boolean[1001][1001];
-        int rows = 1001;
-        int cols = 1001;
+        int[][] matrix = new int[1005][1005];
+        int[][] num = new int[1005][1005];
         Scanner in = new Scanner(System.in);
         int starNum = in.nextInt();
+        int x,y;
         for (int i = 0; i < starNum; i++) {
-            int x = in.nextInt();
-            int y = in.nextInt();
+            x = in.nextInt();
+            y = in.nextInt();
            // matrix[x*rows+y] = true;
-            matrix[x][y] = true;
+            matrix[x][y] = 1;
+        }
+
+        // 计算 num
+        for (int i = 1; i < 1005; i++) {
+            for (int j = 1; j < 1005; j++) {
+                num[i][j] = num[i][j-1] + num[i-1][j] - num[i-1][j-1] + matrix[i][j];
+            }
         }
         int questionNum = in.nextInt();
+        int x1,y1,x2,y2;
         for (int i = 0; i < questionNum; i++) {
-            int x1 = in.nextInt();
-            int y1 = in.nextInt();
-            int x2 = in.nextInt();
-            int y2 = in.nextInt();
-            int start = x1*rows+y1;
-            int end = x2*rows+y2;
-            int count = 0;
-//            for (int j = start; j <=end ; j++) {
-//                if (matrix[j]){
-//                    count++;
-//                }
-//            }
-            for (int j = x1; j <= x2; j++) {
-                for (int k = y1; k <=y2 ; k++) {
-                    if (matrix[j][k]){
-                        count++;
-                    }
-                }
-            }
-            System.out.println(count);
+            x1 = in.nextInt();
+            y1 = in.nextInt();
+            x2 = in.nextInt();
+            y2 = in.nextInt();
+            System.out.println( num[x2][y2] - num[x2][y1-1] - num[x1-1][y2] + num[x1-1][y1-1]);
         }
     }
 

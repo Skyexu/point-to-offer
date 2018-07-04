@@ -18,6 +18,8 @@ import java.util.TreeMap;
 接下来m行，每行输入两个数字xi(1≤xi≤100000)和yi(2≤yi≤1000), 表示套餐的价格和套餐内包含的门票数量。
 输出描述:
 输出牛牛至少要花费的钱的数量。
+https://www.nowcoder.com/discuss/84527
+ 解法：动态规划，完全背包。  将 n+1 看作背包容量，套餐门票价格相当于价值，门票张数是费用
  */
 public class T2 {
     public static void main(String[] args) {
@@ -25,38 +27,26 @@ public class T2 {
         int personNum = in.nextInt() + 1;
         int m = in.nextInt();
         int k = in.nextInt();
-        int[][] mType = new int[m+1][2];
+
+        int[] dp = new int[personNum+1];
+        for (int i = 1; i <= personNum; i++) {
+            dp[i] = i * k;
+        }
         for (int i = 0; i < m; i++) {
             int money = in.nextInt();
             int ticketNum = in.nextInt();
-            mType[i][0] = money;
-            mType[i][1] = ticketNum;
-        }
-        mType[m][0] = k;
-        mType[m][1] = 1;
-        System.out.println(getMoney(personNum,m,mType));
-    }
 
-    private static int getMoney(int personNum,int m,int[][] mType){
-        // 计算票价与票数比例，并按比例从低到高排序
-        // map 存放mType 索引与对应的比例值
-        Map<Double,Integer> rankMap = new TreeMap<>();
-        for (int i = 0; i < m + 1; i++) {
-            rankMap.put(mType[i][0]*1.0/mType[i][1],i);
-        }
-        int totalMoney = 0;
-        for (Map.Entry<Double,Integer> map:rankMap.entrySet()){
-            if (personNum == 0)
-                break;
-            int index = map.getValue();
-            int num = mType[index][1];
-            if (personNum >= num){
-                int a = personNum / num;
-                personNum = personNum % num;
-                totalMoney += a * mType[index][0];
+            for (int j = 1; j <= personNum; j++) {
+                if (j - ticketNum < 0){
+                    dp[j] = Math.min(dp[j],money);
+                }else {
+                    dp[j] = Math.min(dp[j],dp[j-ticketNum] + money);
+                }
             }
         }
 
-        return totalMoney;
+        System.out.println(dp[personNum]);
     }
+
+
 }

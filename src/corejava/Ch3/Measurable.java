@@ -5,5 +5,6 @@ package corejava.Ch3;
  * @Date: 17:49 2018/7/1
  * @Description:
  */
-public class Measurable {
+public interface Measurable {
+    double getMeasure();
 }

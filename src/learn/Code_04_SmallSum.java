@@ -1,6 +1,7 @@
 package learn;
 
 import java.util.Arrays;
+import java.util.function.Predicate;
 
 /**
  * @Author: Skye
@@ -9,7 +10,6 @@ import java.util.Arrays;
  * 在一个数组中，每一个数左边比当前数小的数累加起来，叫做这个数组的小和。求一个数组的小和
  */
 public class Code_04_SmallSum {
-
     public static int small_sum(int[] arr){
         if (arr == null || arr.length < 2)
             return 0;

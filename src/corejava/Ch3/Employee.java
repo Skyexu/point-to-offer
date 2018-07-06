@@ -1,6 +1,6 @@
 package corejava.Ch3;
 
-public class Employee {
+public class Employee implements Measurable{
     private String name;
     private double salary;
 
@@ -20,6 +20,11 @@ public class Employee {
     }
     
     public double getSalary() {
+        return salary;
+    }
+
+    @Override
+    public double getMeasure() {
         return salary;
     }
 }

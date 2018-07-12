@@ -1,6 +1,8 @@
 package learn;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @Author: Skye
@@ -94,7 +96,7 @@ public class Code_08_MaxGap {
 
     // for test
     public static void main(String[] args) {
-        int testTime = 500000;
+        int testTime = 5000;
         int maxSize = 100;
         int maxValue = 100;
         boolean succeed = true;
@@ -107,5 +109,6 @@ public class Code_08_MaxGap {
             }
         }
         System.out.println(succeed ? "Nice!" : "Fucking fucked!");
+
     }
 }
